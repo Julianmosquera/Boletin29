@@ -6,8 +6,8 @@ package boletin29;
  * @author julian
  */
 public abstract class Barco {
-    private String matricula;
-    private int eslora,precio;
+    String matricula;
+    int eslora,precio;
 
     public Barco() {
     }
@@ -30,6 +30,7 @@ public abstract class Barco {
         return precio;
     }
 
+    public abstract void precio(int dias);
     
     
     

@@ -16,7 +16,19 @@ public class Velero extends Barco{
     public int getMastiles() {
         return mastiles;
     }
+
+    @Override
+    public String toString() {
+        return "Alquilar este velero con numero de matricula "+matricula+" y con "+mastiles+" mastiles";
+    }
     
+    
+    
+    @Override
+    public void precio(int dias) {
+        int precio=dias*((eslora*10)+mastiles);
+        System.out.println(precio+"$");
+    }
     
     }
     

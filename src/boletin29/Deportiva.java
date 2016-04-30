@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package boletin29;
 
 /**
@@ -19,6 +15,20 @@ public class Deportiva extends Barco{
 
     public int getPotencia_cv() {
         return potencia_cv;
+    }
+
+    @Override
+    public String toString() {
+        return "El alquiler de este barco deportivo con matricula "+matricula+" y con una potencia de "+potencia_cv;
+    }
+
+    
+    
+    
+    @Override
+    public void precio(int dias) {
+        int precio=dias*((eslora*10)+potencia_cv);
+        System.out.println(precio+"$");
     }
     
     
